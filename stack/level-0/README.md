@@ -10,6 +10,8 @@
 
 ## Write-up
 
+This is probably the easiest stack fengshui challenge.
+
 This challenge gave us `pop rax; ret` gadget, but cannot control any other registers, like `rdi` etc.
 
 Only `0x20` bytes read with `0x10` bytes buffer, so we can only write `0x10` bytes data each time, and then overwrite `rbp` and `rip`.
